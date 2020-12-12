@@ -109,5 +109,12 @@ namespace ClientReservasi_093
             btSimpan.Enabled = false;
             textBoxID.Enabled = false;
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Login f2 = new Login();
+            f2.Show();
+            this.Hide();
+        }
     }
 }

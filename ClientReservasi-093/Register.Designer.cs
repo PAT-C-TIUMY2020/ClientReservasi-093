@@ -40,6 +40,7 @@
             this.btClear = new System.Windows.Forms.Button();
             this.comboBoxKategori = new System.Windows.Forms.ComboBox();
             this.dtRegister = new System.Windows.Forms.DataGridView();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtRegister)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,11 +153,22 @@
             this.dtRegister.TabIndex = 11;
             this.dtRegister.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtRegister_CellClick);
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(590, 126);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 12;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(701, 374);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.dtRegister);
             this.Controls.Add(this.comboBoxKategori);
             this.Controls.Add(this.btClear);
@@ -193,5 +205,6 @@
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.ComboBox comboBoxKategori;
         private System.Windows.Forms.DataGridView dtRegister;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

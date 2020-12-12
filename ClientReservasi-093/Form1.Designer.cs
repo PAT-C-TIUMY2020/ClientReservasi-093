@@ -43,6 +43,7 @@
             this.btHapus = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
             this.dtPemesanan = new System.Windows.Forms.DataGridView();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +129,7 @@
             // 
             // btSimpan
             // 
-            this.btSimpan.Location = new System.Drawing.Point(511, 70);
+            this.btSimpan.Location = new System.Drawing.Point(511, 59);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(75, 23);
             this.btSimpan.TabIndex = 10;
@@ -138,7 +139,7 @@
             // 
             // btUpdate
             // 
-            this.btUpdate.Location = new System.Drawing.Point(511, 116);
+            this.btUpdate.Location = new System.Drawing.Point(511, 96);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(75, 23);
             this.btUpdate.TabIndex = 11;
@@ -148,7 +149,7 @@
             // 
             // btHapus
             // 
-            this.btHapus.Location = new System.Drawing.Point(511, 157);
+            this.btHapus.Location = new System.Drawing.Point(511, 137);
             this.btHapus.Name = "btHapus";
             this.btHapus.Size = new System.Drawing.Size(75, 23);
             this.btHapus.TabIndex = 12;
@@ -158,7 +159,7 @@
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(511, 202);
+            this.btClear.Location = new System.Drawing.Point(511, 180);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(75, 23);
             this.btClear.TabIndex = 13;
@@ -175,11 +176,22 @@
             this.dtPemesanan.TabIndex = 14;
             this.dtPemesanan.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPemesanan_CellContentClick);
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(511, 226);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 15;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(713, 390);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.dtPemesanan);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.btHapus);
@@ -197,7 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Reservasi";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).EndInit();
             this.ResumeLayout(false);
@@ -222,6 +234,7 @@
         private System.Windows.Forms.Button btHapus;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.DataGridView dtPemesanan;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
 
